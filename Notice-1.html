@@ -3,197 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="app.css" />
 <title>jeya_portfolio</title>
-<style type="text/css">
-@import
-	url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-@import
-	url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap')
-	;
-
-@import
-	url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap')
-	;
-
-body, html {
-	overflow-x: hidden;
-	font-family: 'Roboto', sans-serif;
-}
-
-body, ul, li {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-a {
-	color: inherit;
-	text-decoration: none;
-	font-weight: bold;
-}
-
-/*라이브러리*/
-.container>section {
-	flex-grow: 1;
-}
-
-.container {
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
-}
-
-.con {
-	max-width: 1200px;
-	margin: 0 auto;
-}
-
-.flex {
-	display: flex;
-}
-
-.main {
-	width: 846px;
-	margin: 0 auto;
-}
-
-/*헤더 ---- 배너*/
-.container>header .top__banner {
-	justify-content: center;
-	height: 150px;
-}
-
-.container>header .top__banner>a {
-	align-items: center;
-}
-
-.container>header .top__banner  a>span {
-	font-size: 40px;
-	font-weight: 700;
-}
-
-.container>header .top__banner  a>img {
-	width: 100px;
-}
-
-/*헤더 ---- 메뉴바 */
-.container>header .top__menuBar {
-	flex-direction: row;
-	justify-content: space-between;
-	height: 130px;
-}
-
-.container>header .top__menuBar>.icon>img {
-	padding: 5px;
-	width: 30px;
-}
-
-.top__menuBar li {
-	position: relative;
-}
-
-.top__menuBar ul ul {
-	display: none;
-	position: absolute;
-}
-
-.top__menuBar>.row li>a {
-	font-size: 14pt;
-	display: block;
-	padding: 5px 20px;
-	white-space: nowrap;
-}
-
-.top__menuBar>.icon>img {
-	cursor: pointer;
-}
-
-.top__menuBar>.row .cell  a:hover {
-	color: #1e66aa;
-	transition: color 0.5s;
-}
-
-.top__menuBar>.row .cell:hover ul {
-	display: block;
-}
-
-/*섹션*/
-.section-1__home {
-	min-height: 50vh;
-	width: 846px;
-	height: 520px;
-	margin: 0 auto;
-	position: relative;
-}
-
-.section-1__home>.img-1>img {
-	display: block;
-	width: 380px;
-	position: absolute;
-	z-index: 1;
-}
-
-.section-1__home>.img-2>img {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-}
-
-.section-1__home>.text-box{
-  position : absolute;
-  top:0;
-  right:0;
-  width : 420px;
-}
-
-.section-1__home>.text-box>.text-1 {
-	font-size: 40px;
-	font-weight: 700;
-}
-
-.section-1__home>.text-box>.text-2 {
-	font-size: 14px;
-	font-weight: 400;
-	color: #505050;
-}
-
-/*푸터*/
-.container>footer .bottom-bar {
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	border-top: solid 1px;
-	height: 70px;
-}
-
-.container>footer .bottom-bar>div:nth-child(1)>span {
-	font-size: 14px;
-	font-weight: 500;
-}
-
-.container>footer .bottom-bar>.img-box>img {
-	width: 40px;
-}
-
-.container>footer .bottom-bar>div:nth-child(3) span {
-	font-size: 14px;
-	font-weight: 500;
-}
-</style>
 </head>
 <body>
 
 	<div class="container">
 
 		<!-----------헤더 시작---------------------------------->
-		
+
 		<header class="top con-min-width">
 			<div class="con">
 				<div class="top__banner flex">
-					<a
-						href="index.html"
-						class="flex"> <img
+					<a href="index.html" class="flex"> <img
 						src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FXnwmU%2FbtqPNyskUIk%2FoEglomcERfDjifCAOVj900%2Fimg.png"
 						alt=""> <span>Welcome!</span>
 					</a>
@@ -208,11 +30,10 @@ a {
 					</div>
 
 					<ul class="row flex">
-						<li class="cell"><a
-							href="index.html">Home</a></li>
+						<li class="cell"><a href="index.html">Home</a></li>
 						<li class="cell"><a href="#">About</a></li>
 						<li class="cell"><a href="#">Board</a>
-							<ul><li><a href="Notice-1.html">Notice</a></li><li><a href="Free Board-1.html">Free Board</a></li>
+							<ul><li><a href="Notice-1.html">Notice</a></li><li><a href="IT-1.html">IT</a></li>
 							</ul></li>
 						<li class="cell"><a href="#">Social</a></li>
 						<li class="cell"><a href="#">Data</a></li>
@@ -222,173 +43,44 @@ a {
 			</div>
 		</header>
 		<!-----------헤더 끝---------------------------------->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>list</title>
-<style type="text/css">
-:root{
-  --list__id : 150px;
-  --list__title : 300px;
-  --list__writer : 200px;
-  --list__count : 200px;
-  --list__regDate : 400px;
-}
+<!----------섹션 시작---------------------------------->
+<section class="con-min-width main">
+	<div class="con">
+		<div class="section-2__list flex">
 
-.container>section {
-	flex-grow: 1;
-	width: 846px;
-	margin: 0 auto;
-}
+			<div class="title">Notice</div>
 
-.section-1__list {
-	flex-direction: column;
-	min-height: 50vh;
-}
+			<header>
+				<div class="list flex">
+					<!--  <div class="list__id">번호</div>-->
+					<div class="list__title">제목</div>
+					<div class="list__writer">작성자</div>
+					<div class="list__count">조회수</div>
+					<div class="list__regDate">날짜</div>
+				</div>
+			</header>
 
-.section-1__list .list {
-	font-size: 15px;
-	font-weight: 400;
-	flex-shrink: 0;
-	text-align: center;
-}
+			<main>
+				<!-----------섹션 끝----------------------------------><div class = "list flex"> <div class="list__title"><a href ="Notice-article-1.html">💌 사이트 안내</a></div> <div class="list__writer">제야</div> <div class="list__count">0</div> <div class="list__regDate">2020-12-20 03:25:50</div></div></main><ul class="page flex"><li class ="list__link--selected"><a href="Notice-1.html">1</a><li></ul></div></section><!-----------푸터 시작---------------------------------->
+<footer class="bottom con-min-width main">
+	<div class="con">
+		<div class="bottom-bar flex">
+			<div>
+				<span>Je-ya_portfolio</span>
+			</div>
+			<div class="img-box">
+				<img
+					src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fc6ZH8K%2FbtqPYSY8vkt%2FgwbLp6dqod6dKimgQZrHA0%2Fimg.png"
+					alt="">
+			</div>
+			<div>
+				<span>Thank you for coming my Blog :)</span>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-----------푸터 끝---------------------------------->
+</div>
 
-.section-1__list>header {
-	padding: 5px 0;
-	border-bottom: solid 1px;
-}
-
-.section-1__list>main {
-	height: 350px;
-	padding: 5px 0;
-}
-
-.section-1__list>.title {
-	height: 50px;
-}
-
-.section-1__list>main>.list {
-	padding: 5px 0;
-}
-
-.section-1__list > main > .list > .list__title > a{
-  font-weight : 400; 
-}
-
-.section-1__list > main > .list > .list__title:hover > a{
-  text-decoration : underline; 
-  color : gray; 
-}
-
-.section-1__list>.title>span {
-	font-size: 30px;
-	font-weight: 700;
-}
-
-.section-1__list>header>div>div {
-	position: relative;
-}
-
-.section-1__list>header>div>div:not(:nth-child(5))::after {
-	content: "";
-	background-color: black;
-	position: absolute;
-	top: 50%;
-	right: 0;
-	width: 1px;
-	height: 15px;
-	transform: translatey(-50%);
-}
-
-.section-1__list>.page {
-	justify-content: center;
-	align-content: flex-end;
-	font-size: 14px;
-}
-
-.section-1__list>.page>li {
-	margin: 0 5px;
-}
-
-.section-1__list>.page>li>a {
-	border: solid 1px transparent;
-	min-width: 20px;
-	padding: 0 5px;
-}
-
-.section-1__list>.page>li:not(:first-child):not(:last-child)>a:hover {
-	color: lightgray;
-	border-color: lightgray;
-}
-
-
-.list__id {
-	width: var(--list__id);
-}
-
-.list__title {
-	width: var(--list__title);
-}
-
-.list__writer {
-	width: var(--list__writer);
-}
-
-.list__count {
-	width: var(--list__count);
-}
-
-.list__regDate {
-	width: var(--list__regDate);
-}
-
-.list__link--selected {
-	color : red; 
-}
-
-</style>
-</head>
-<body>
-
-	<!-- 작성필요 / 리스트에 따라 번호 바뀌어야 됨-->
-
-	<!----------섹션 시작---------------------------------->
-	<section class="con-min-width main">
-		<div class="con">
-			<div class="section-1__list flex">
-
-				<div class="title"><span>Notice</span></div>
-
-				<header>
-					<div class="list flex">
-						<div class="list__id">번호</div>
-						<div class="list__title">제목</div>
-						<div class="list__writer">작성자</div>
-						<div class="list__count">조회수</div>
-						<div class="list__regDate">날짜</div>
-					</div>
-				</header>
-
-				<!-----------섹션 끝----------------------------------><main><div class = "list flex"> <div class="list__id">20</div> <div class="list__title"><a href ="C:\work\sts-4.8.0.RELEASE-workspace\ssg/site/Notice-article-20.html">공지사항20</a></div> <div class="list__writer">홍길동20</div> <div class="list__count">0</div> <div class="list__regDate">2020-12-18 13:43:20</div></div><div class = "list flex"> <div class="list__id">19</div> <div class="list__title"><a href ="C:\work\sts-4.8.0.RELEASE-workspace\ssg/site/Notice-article-19.html">공지사항19</a></div> <div class="list__writer">홍길동19</div> <div class="list__count">0</div> <div class="list__regDate">2020-12-18 13:43:20</div></div><div class = "list flex"> <div class="list__id">18</div> <div class="list__title"><a href ="C:\work\sts-4.8.0.RELEASE-workspace\ssg/site/Notice-article-18.html">공지사항18</a></div> <div class="list__writer">홍길동18</div> <div class="list__count">0</div> <div class="list__regDate">2020-12-18 13:43:20</div></div><div class = "list flex"> <div class="list__id">17</div> <div class="list__title"><a href ="C:\work\sts-4.8.0.RELEASE-workspace\ssg/site/Notice-article-17.html">공지사항17</a></div> <div class="list__writer">홍길동17</div> <div class="list__count">0</div> <div class="list__regDate">2020-12-18 13:43:20</div></div><div class = "list flex"> <div class="list__id">16</div> <div class="list__title"><a href ="C:\work\sts-4.8.0.RELEASE-workspace\ssg/site/Notice-article-16.html">공지사항16</a></div> <div class="list__writer">홍길동16</div> <div class="list__count">0</div> <div class="list__regDate">2020-12-18 13:43:20</div></div><div class = "list flex"> <div class="list__id">15</div> <div class="list__title"><a href ="C:\work\sts-4.8.0.RELEASE-workspace\ssg/site/Notice-article-15.html">공지사항15</a></div> <div class="list__writer">홍길동15</div> <div class="list__count">0</div> <div class="list__regDate">2020-12-18 13:43:20</div></div><div class = "list flex"> <div class="list__id">14</div> <div class="list__title"><a href ="C:\work\sts-4.8.0.RELEASE-workspace\ssg/site/Notice-article-14.html">공지사항14</a></div> <div class="list__writer">홍길동14</div> <div class="list__count">0</div> <div class="list__regDate">2020-12-18 13:43:20</div></div><div class = "list flex"> <div class="list__id">13</div> <div class="list__title"><a href ="C:\work\sts-4.8.0.RELEASE-workspace\ssg/site/Notice-article-13.html">공지사항13</a></div> <div class="list__writer">홍길동13</div> <div class="list__count">0</div> <div class="list__regDate">2020-12-18 13:43:20</div></div><div class = "list flex"> <div class="list__id">12</div> <div class="list__title"><a href ="C:\work\sts-4.8.0.RELEASE-workspace\ssg/site/Notice-article-12.html">공지사항12</a></div> <div class="list__writer">홍길동12</div> <div class="list__count">0</div> <div class="list__regDate">2020-12-18 13:43:20</div></div><div class = "list flex"> <div class="list__id">11</div> <div class="list__title"><a href ="C:\work\sts-4.8.0.RELEASE-workspace\ssg/site/Notice-article-11.html">공지사항11</a></div> <div class="list__writer">홍길동11</div> <div class="list__count">0</div> <div class="list__regDate">2020-12-18 13:43:20</div></div></main><ul class="page flex"><li class ="list__link--selected"><a href="Notice-1.html">1</a><li><li><a href="Notice-2.html">2</a><li><li><a href="Notice-2.html">다음글 &gt;</a></li></ul></div></section><!-----------푸터 시작---------------------------------->
-        <footer class="bottom con-min-width main">
-          <div class="con">
-            <div class="bottom-bar flex">
-              <div >
-                <span>Je-ya_portfolio</span>
-              </div>
-              <div class="img-box">
-                <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fc6ZH8K%2FbtqPYSY8vkt%2FgwbLp6dqod6dKimgQZrHA0%2Fimg.png" alt="">
-              </div>
-              <div>
-                <span>Thank you for coming my Blog :)</span>
-              </div>
-            </div>
-          </div>
-        </footer>
-        <!-----------푸터 끝---------------------------------->
-        </div>
-        <script src="app.js"></script>
-      </body>
-    </html>
+</body>
+</html>
