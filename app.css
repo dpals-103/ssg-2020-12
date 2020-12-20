@@ -93,10 +93,6 @@ a {
   color : #4a6110;
 }
 
-.top__menuBar > .icon > img{
-  cursor : pointer; 
-}
-
 .top__menuBar > .row .cell a:hover{
   color : #4a6110;
 }
