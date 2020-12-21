@@ -38,6 +38,11 @@ a {
 	min-height: 100vh;
 }
 
+.container > section{
+  flex-grow : 1;
+  flex-basis : 550px;
+}
+
 .con {
 	max-width: 1200px;
 	margin: 0 auto;
@@ -52,27 +57,16 @@ a {
 	margin: 0 auto;
 }
 
-
 /*헤더 ---- 배너*/
-.container>header .top__banner {
-	justify-content: center;
-	height: 150px;
+.container > header .top__banner{
+  height : 150px;
+  justify-content : center;
+  align-items : center;
 }
 
-.container>header .top__banner>a {
-	align-items: center;
+.container > header .top__banner  img{
+  width : 350px; 
 }
-
-.container>header .top__banner  a>span {
-	font-size: 50px;
-	font-weight: 700;
-	color : #191919;
-}
-
-.container>header .top__banner  a>img {
-	width: 100px;
-}
-
 
 /*헤더---- 탑 메뉴바 -----*/
 
@@ -151,7 +145,6 @@ a {
 
 /*섹션-1 홈 메인*/
 .section-1__home {
-	min-height: 50vh;
 	width: 846px;
 	height: 520px;
 	margin: 0 auto;
