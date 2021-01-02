@@ -50,55 +50,89 @@
 <meta name="title" content="JEYA-BLOG" />
 <meta name="keywords" content="HTMl, CSS, JAVASCRIPT, JAVA, MySQL, Web Design" />
 <meta name="copyright" content="JEYA-BLOG" />
-<meta name="pubdate" content="2021-01-02T19:24:33" />
-<meta name="lastmod" content="2021-01-02T19:24:33" />
+<meta name="pubdate" content="2021-01-02T23:03:48" />
+<meta name="lastmod" content="2021-01-02T23:03:48" />
 <!-- OPENGRAPH -->
 <meta property="og:site_name" content="JEYA-BLOG" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="MySQL 기본명령어 모음집_1탄" />
-<meta property="og:description" content="# 🚩내가 보려고 만드는 MySQL 기본명령어 모읍집 -- 1탄
-# 👀 데이터 조회하기!
-설명순서는 큰 단위에서 작은 단위 순으로!
-***
-<br>
-<br>
-## 🔎 데이터베이스 조회 (a.k.a 데이터가 모여있는 폴더)
-## `SHOW DATABASES;`
-##### 👉 생성되어 있는 데이터베이스의 목록을 조회합니다. 
+<meta property="og:description" content=" 내가 보려고 만드는 MySQL 기본명령어 모읍집  1탄
+  데이터 조회하기
+설명순서는 큰 단위에서 작은 단위 순으로
 
-<br>
+br
+br
+  데이터베이스 조회 aka 데이터가 모여있는 폴더
+ SHOW DATABASES
+  생성되어 있는 데이터베이스의 목록을 조회합니다 
 
-## 🔎 테이블 조회 (a.k.a 하나의 엑셀파일)
-## `SHOW TABLES`;
-##### 👉 선택되어 있는 데이터베이스 안에 만들어져 있는 테이블들의 목록을 조회합니다. 
-<br>
-```
-✅ USE a1;
----- 'a1' 이라는 데이터베이스를 선택합니다. 
-```
-<br>
+br
 
-## `DESC '테이블명';`
-##### 👉 선택한 테이블의 칼럼구조와 속성을 조회합니다.
-<br>
-<br>
-<br>
-## 🔎 ROW(로우) 조회를 위한 명령어 (a.k.a 엑셀파일의 한 행, 실질적인 데이터가 들어있는 곳)
+  테이블 조회 aka 하나의 엑셀파일
+ SHOW TABLES
+  선택되어 있는 데이터베이스 안에 만들어져 있는 테이블들의 목록을 조회합니다 
+br
+
+ USE a1
+ a1 이라는 데이터베이스를 선택합니다 
+
+br
+
+ DESC 테이블명
+  선택한 테이블의 칼럼구조와 속성을 조회합니다
+br
+br
+br
+  ROW로우 조회를 위한 명령어 aka 엑셀파일의 한 행 실질적인 데이터가 들어있는 곳
 
 
-## `SELECT id;`
-##### 👉 id 칼럼의 row의 값을 선택하여 조회합니다.
-<br>
-```
-✅ SELECT id FROM article;
---" />
+ SELECT id
+  id 칼럼의 row의 값을 선택하여 조회합니다
+br
+
+ SELECT id FROM article
+ aritlce 테이블에서 id칼럼의 값을 조회합니다 
+
+br
+ FROM article테이블명
+  row를 조회할 테이블을 지정합니다
+br
+
+ SELECT  FROM forest
+ forest 테이블에 있는 모든 정보를 조회합니다
+
+br
+ where id2
+  id칼럼의 값이 2인 row를 조회합니다
+br
+
+ SELECT  FROM article where id  2
+ aritlce 테이블에서 id칼럼의 값이 2인 로우를 모두 조회합니다 
+
+br
+ AND title  banana
+ where 명령어를 사용할 때 추가적인 조건은 AND 와 함께 사용합니다
+br
+
+ SELECT  FROM article where id  2 AND title  banana
+ aritlce 테이블에서 id가 2이고 title이 banana인 row를 조회합니다 
+
+
+ ORDER BY id DESC
+  id값을 통해 역순으로 정렬한다
+br
+
+ ORDER BY 기준칼럼   기준 칼럼을 통해 정렬
+ DESC   역순 내림차순
+ DESC   순차 오름차순 
+" />
 <meta property="og:locale" content="ko_KR" />
 <meta property="og:image" content="site/img/logo.png" />
 <meta property="og:image:alt" content="blog.ljeya.org" />
 <meta property="og:image:width" content="486" />
 <meta property="og:image:height" content="254" />
-<meta property="og:updated_time" content="2021-01-02T19:24:33"/>
-<meta property="og:pubdate" content="2021-01-02T19:24:33" />
+<meta property="og:updated_time" content="2021-01-02T23:03:48"/>
+<meta property="og:pubdate" content="2021-01-02T23:03:48" />
 <meta property="og:url" content="https://blog.ljeya.org" />
 <!-- TWITTER -->
 <meta name="twitter:card" content="summary_large_image" />
@@ -106,81 +140,149 @@
 <meta name="twitter:site" content="@JEYA-BLOG" />
 <meta name="twitter:creator" content="@JEYA-BLOG" />
 <meta name="twitter:image" content="site/img/logo.png">
-<meta name="twitter:description" content="# 🚩내가 보려고 만드는 MySQL 기본명령어 모읍집 -- 1탄
-# 👀 데이터 조회하기!
-설명순서는 큰 단위에서 작은 단위 순으로!
-***
-<br>
-<br>
-## 🔎 데이터베이스 조회 (a.k.a 데이터가 모여있는 폴더)
-## `SHOW DATABASES;`
-##### 👉 생성되어 있는 데이터베이스의 목록을 조회합니다. 
+<meta name="twitter:description" content=" 내가 보려고 만드는 MySQL 기본명령어 모읍집  1탄
+  데이터 조회하기
+설명순서는 큰 단위에서 작은 단위 순으로
 
-<br>
+br
+br
+  데이터베이스 조회 aka 데이터가 모여있는 폴더
+ SHOW DATABASES
+  생성되어 있는 데이터베이스의 목록을 조회합니다 
 
-## 🔎 테이블 조회 (a.k.a 하나의 엑셀파일)
-## `SHOW TABLES`;
-##### 👉 선택되어 있는 데이터베이스 안에 만들어져 있는 테이블들의 목록을 조회합니다. 
-<br>
-```
-✅ USE a1;
----- 'a1' 이라는 데이터베이스를 선택합니다. 
-```
-<br>
+br
 
-## `DESC '테이블명';`
-##### 👉 선택한 테이블의 칼럼구조와 속성을 조회합니다.
-<br>
-<br>
-<br>
-## 🔎 ROW(로우) 조회를 위한 명령어 (a.k.a 엑셀파일의 한 행, 실질적인 데이터가 들어있는 곳)
+  테이블 조회 aka 하나의 엑셀파일
+ SHOW TABLES
+  선택되어 있는 데이터베이스 안에 만들어져 있는 테이블들의 목록을 조회합니다 
+br
+
+ USE a1
+ a1 이라는 데이터베이스를 선택합니다 
+
+br
+
+ DESC 테이블명
+  선택한 테이블의 칼럼구조와 속성을 조회합니다
+br
+br
+br
+  ROW로우 조회를 위한 명령어 aka 엑셀파일의 한 행 실질적인 데이터가 들어있는 곳
 
 
-## `SELECT id;`
-##### 👉 id 칼럼의 row의 값을 선택하여 조회합니다.
-<br>
-```
-✅ SELECT id FROM article;
---" />
+ SELECT id
+  id 칼럼의 row의 값을 선택하여 조회합니다
+br
+
+ SELECT id FROM article
+ aritlce 테이블에서 id칼럼의 값을 조회합니다 
+
+br
+ FROM article테이블명
+  row를 조회할 테이블을 지정합니다
+br
+
+ SELECT  FROM forest
+ forest 테이블에 있는 모든 정보를 조회합니다
+
+br
+ where id2
+  id칼럼의 값이 2인 row를 조회합니다
+br
+
+ SELECT  FROM article where id  2
+ aritlce 테이블에서 id칼럼의 값이 2인 로우를 모두 조회합니다 
+
+br
+ AND title  banana
+ where 명령어를 사용할 때 추가적인 조건은 AND 와 함께 사용합니다
+br
+
+ SELECT  FROM article where id  2 AND title  banana
+ aritlce 테이블에서 id가 2이고 title이 banana인 row를 조회합니다 
+
+
+ ORDER BY id DESC
+  id값을 통해 역순으로 정렬한다
+br
+
+ ORDER BY 기준칼럼   기준 칼럼을 통해 정렬
+ DESC   역순 내림차순
+ DESC   순차 오름차순 
+" />
 <!-- GOOGLE+ -->
 <meta itemprop="headline" content="JEYA-BLOG" />
 <meta itemprop="name" content="JEYA-BLOG" />
-<meta itemprop="description" content="# 🚩내가 보려고 만드는 MySQL 기본명령어 모읍집 -- 1탄
-# 👀 데이터 조회하기!
-설명순서는 큰 단위에서 작은 단위 순으로!
-***
-<br>
-<br>
-## 🔎 데이터베이스 조회 (a.k.a 데이터가 모여있는 폴더)
-## `SHOW DATABASES;`
-##### 👉 생성되어 있는 데이터베이스의 목록을 조회합니다. 
+<meta itemprop="description" content=" 내가 보려고 만드는 MySQL 기본명령어 모읍집  1탄
+  데이터 조회하기
+설명순서는 큰 단위에서 작은 단위 순으로
 
-<br>
+br
+br
+  데이터베이스 조회 aka 데이터가 모여있는 폴더
+ SHOW DATABASES
+  생성되어 있는 데이터베이스의 목록을 조회합니다 
 
-## 🔎 테이블 조회 (a.k.a 하나의 엑셀파일)
-## `SHOW TABLES`;
-##### 👉 선택되어 있는 데이터베이스 안에 만들어져 있는 테이블들의 목록을 조회합니다. 
-<br>
-```
-✅ USE a1;
----- 'a1' 이라는 데이터베이스를 선택합니다. 
-```
-<br>
+br
 
-## `DESC '테이블명';`
-##### 👉 선택한 테이블의 칼럼구조와 속성을 조회합니다.
-<br>
-<br>
-<br>
-## 🔎 ROW(로우) 조회를 위한 명령어 (a.k.a 엑셀파일의 한 행, 실질적인 데이터가 들어있는 곳)
+  테이블 조회 aka 하나의 엑셀파일
+ SHOW TABLES
+  선택되어 있는 데이터베이스 안에 만들어져 있는 테이블들의 목록을 조회합니다 
+br
+
+ USE a1
+ a1 이라는 데이터베이스를 선택합니다 
+
+br
+
+ DESC 테이블명
+  선택한 테이블의 칼럼구조와 속성을 조회합니다
+br
+br
+br
+  ROW로우 조회를 위한 명령어 aka 엑셀파일의 한 행 실질적인 데이터가 들어있는 곳
 
 
-## `SELECT id;`
-##### 👉 id 칼럼의 row의 값을 선택하여 조회합니다.
-<br>
-```
-✅ SELECT id FROM article;
---" />
+ SELECT id
+  id 칼럼의 row의 값을 선택하여 조회합니다
+br
+
+ SELECT id FROM article
+ aritlce 테이블에서 id칼럼의 값을 조회합니다 
+
+br
+ FROM article테이블명
+  row를 조회할 테이블을 지정합니다
+br
+
+ SELECT  FROM forest
+ forest 테이블에 있는 모든 정보를 조회합니다
+
+br
+ where id2
+  id칼럼의 값이 2인 row를 조회합니다
+br
+
+ SELECT  FROM article where id  2
+ aritlce 테이블에서 id칼럼의 값이 2인 로우를 모두 조회합니다 
+
+br
+ AND title  banana
+ where 명령어를 사용할 때 추가적인 조건은 AND 와 함께 사용합니다
+br
+
+ SELECT  FROM article where id  2 AND title  banana
+ aritlce 테이블에서 id가 2이고 title이 banana인 row를 조회합니다 
+
+
+ ORDER BY id DESC
+  id값을 통해 역순으로 정렬한다
+br
+
+ ORDER BY 기준칼럼   기준 칼럼을 통해 정렬
+ DESC   역순 내림차순
+ DESC   순차 오름차순 
+" />
 <meta itemprop="image" content="site/img/logo.png" />
 
 <!-- 구글 소유권 확인 메타태그 -->
@@ -191,6 +293,7 @@
 
 <title>MySQL 기본명령어 모음집_1탄</title>
 </head>
+
 <body>
 
 	<div class="container">
@@ -213,7 +316,7 @@
             <!--게시판 목록 부분 (왼쪽 사이드바)-->
             <div class="top__boardMenu row flex">
               <ul>
-                <li class="cell "><a class ="point" href="#">Board</a>
+                <li class="cell"><a class ="point" href="#">Board</a>
                   <ul>
                    <li><a href="Notice-1.html">Notice</a></li><li><a href="IT-1.html">IT</a></li><li><a href="StudyLog-1.html">StudyLog</a></li>
                   </ul>
@@ -289,8 +392,47 @@
 <br>
 ```
 ✅ SELECT id FROM article;
---</div></div><div class="detail_4 flex"><div class="article_list"><a href="IT-1.html">목록으로돌아가기</a></div><div class="next"><a href="IT-article-3.html">다음글 &gt;</a></div></div></div></div><script src="app.js"></script></section><div id="disqus_thread"></div>
+---- aritlce 테이블에서 id칼럼의 값을 조회합니다. 
+```
+<br>
+## `FROM article(테이블명);`
+##### 👉 row를 조회할 테이블을 지정합니다.
+<br>
+```
+✅ SELECT * FROM forest;
+---- forest 테이블에 있는 모든 정보를 조회합니다.
+```
+<br>
+## `where id=2;`
+##### 👉 id칼럼의 값이 2인 row를 조회합니다.
+<br>
+```
+✅ SELECT * FROM article where id = 2;
+---- aritlce 테이블에서 id칼럼의 값이 2인 로우를 모두 조회합니다. 
+```
+<br>
+## `AND title = 'banana'`
+##### 👉'where' 명령어를 사용할 때 추가적인 조건은 AND 와 함께 사용합니다.
+<br>
+```
+✅ SELECT * FROM article where id = 2 AND title = 'banana';
+---- aritlce 테이블에서 id가 2이고, title이 banana인 row를 조회합니다. 
+```
+
+## `ORDER BY id DESC'`
+##### 👉 'id값을 통해 역순으로 정렬한다'
+<br>
+```
+✅ ORDER BY (기준칼럼)  : 기준 칼럼을 통해 정렬
+✅ DESC  : 역순 (내림차순)
+✅ DESC  : 순차 (오름차순) 
+```</div></div><div class="detail_4 flex"><div class="article_list"><a href="IT-1.html">목록으로돌아가기</a></div><div class="next"><a href="IT-article-3.html">다음글 &gt;</a></div></div></div></div><script src="app.js"></script></section><div id="disqus_thread"></div>
 <script>
+	var disqus_config = function(){
+		this.page.url = 'https://blog.ljeya.org/IT-article-2.html';
+		this.page.identifier = 'IT-article-2.html'; 
+	};
+	
 	(function() {
 		var d = document, s = d.createElement('script');
 		s.src = 'https://jeya-portfolio.disqus.com/embed.js';
