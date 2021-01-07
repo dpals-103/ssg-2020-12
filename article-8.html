@@ -46,84 +46,267 @@
 <!-- 메타태그정보 //-->
 <!-- META -->
 <link rel="canonical" href="https://blog.ljeya.org" />
-<meta name="subject" content="JEYA-BLOG 탄생로그 -- 3"/>
+<meta name="subject" content="CSS flex_container 속성 1탄!"/>
 <meta name="title" content="JEYA-BLOG" />
 <meta name="keywords" content="HTMl, CSS, JAVASCRIPT, JAVA, MySQL, Web Design" />
 <meta name="copyright" content="JEYA-BLOG" />
-<meta name="pubdate" content="2021-01-08T01:18:08" />
-<meta name="lastmod" content="2021-01-08T01:18:08" />
+<meta name="pubdate" content="2021-01-08T01:41:43" />
+<meta name="lastmod" content="2021-01-08T01:41:43" />
 <!-- OPENGRAPH -->
 <meta property="og:site_name" content="JEYA-BLOG" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="JEYA-BLOG 탄생로그 -- 3" />
-<meta property="og:description" content=" JEYABLOG 탄생로그
- 메인 홈 디자인 잡기 
-youtube
-ThLyBjKoA
+<meta property="og:title" content="CSS flex_container 속성 1탄!" />
+<meta property="og:description" content="  CSS displayflex 공부하기   container 속성 1탄
 
+ flex는 엘리먼트의 크기나 위치를 쉽게 잡아주는 도구
 
-프론트와 백을 함께 배우면서 내 적성에는 뭐가 제일
-잘 맞을까 수도 없어 고민하고 있는데 
-이 사이트 만드는 과정을 통해서 확실히 나는 프론트를 더 
-재밌다고 느끼는 거 같다 
-백엔드 부분은 어려운 문제를 풀어냈을 때의 느끼는 쾌감 같을 걸 느낄 수 있지만
-그 과정이 나에게는 아직 버겁다 
-  
-그에 비해 프론트엔드는 내가 작성하는 코드가 구현된 모습을 바로바로 볼 수 있는게 재밌게 느껴진다 
-좀 더 고쳐보려고 노력하게 되고 더 욕심내서 코드를 짜려고 하게 된다 
+ flex를 사용하기 위해서는 컨테이너 태그에 display속성을 부여해야 합니다
 
-  " />
+여기서 컨테이너란 배치할 요소자식들을 감싸고 있는 큰 틀부모 같은 존재입니다 
+
+br
+ 속성은 크게 2가지로 나뉩니다
+  container에 부여되는 속성
+  Item에 부여되는 속성
+ container에 부여되는 속성 먼저 알아볼께요 
+br
+br
+br
+  display
+ 위에서 말했든 컨테이너 태그에 displayflex를 사용해줘야 시작할 수 있어요 
+ 그래야 자식들인 flex item들을 배치할 수 있습니다 
+br
+br
+br
+  flexdirection
+ flexdirection은 아이템들이 정렬되는 방향을 결정해요 
+br
+ row 기본값
+ 아이템들이 가로방향으로 배치되요 
+
+1 2 3 
+
+br
+ rowreverse
+ 가로방향이지만 배치되지만 거꾸로 배치되요 
+
+3 2 1
+
+br
+ column
+ 아이템들이 세로방향으로 배치되요 
+
+1
+2
+3
+
+br
+ columnreverse
+ 세로방향이지만 배치되지만 거꾸로 배치되요 
+
+3
+2
+1
+
+br
+br
+br
+  flexwrap
+ flexwrap은 아이템들이 한 줄에 함께 있지 못할 정도로 꽉 차게 된다면 
+ 어떤 식으로 줄바꿈을 할지 결정합니다 
+br
+ nowrap 기본값
+ 넘쳐서 삐져나가도 자리보존 줄바꿈을 하지 않아요  
+br
+ wrap
+ 컨테이너의 크기에 따라 줄바꿈을 합니다 float이나 inlineblock과 비슷해요 
+
+12
+3
+
+br
+ wrapreverse
+ wrap과 비슷하지만 역순으로 줄바꿈 합니다 아래가 위로 위가 아래로 
+
+3
+21
+
+br
+br
+  container 속성은 다음편에서 계속 " />
 <meta property="og:locale" content="ko_KR" />
 <meta property="og:image" content="site/img/logo.png" />
 <meta property="og:image:alt" content="blog.ljeya.org" />
 <meta property="og:image:width" content="486" />
 <meta property="og:image:height" content="254" />
-<meta property="og:updated_time" content="2021-01-08T01:18:08"/>
-<meta property="og:pubdate" content="2021-01-08T01:18:08" />
+<meta property="og:updated_time" content="2021-01-08T01:41:43"/>
+<meta property="og:pubdate" content="2021-01-08T01:41:43" />
 <meta property="og:url" content="https://blog.ljeya.org" />
 <!-- TWITTER -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="JEYA-BLOG 탄생로그 -- 3" />
+<meta name="twitter:title" content="CSS flex_container 속성 1탄!" />
 <meta name="twitter:site" content="@JEYA-BLOG" />
 <meta name="twitter:creator" content="@JEYA-BLOG" />
 <meta name="twitter:image" content="site/img/logo.png">
-<meta name="twitter:description" content=" JEYABLOG 탄생로그
- 메인 홈 디자인 잡기 
-youtube
-ThLyBjKoA
+<meta name="twitter:description" content="  CSS displayflex 공부하기   container 속성 1탄
 
+ flex는 엘리먼트의 크기나 위치를 쉽게 잡아주는 도구
 
-프론트와 백을 함께 배우면서 내 적성에는 뭐가 제일
-잘 맞을까 수도 없어 고민하고 있는데 
-이 사이트 만드는 과정을 통해서 확실히 나는 프론트를 더 
-재밌다고 느끼는 거 같다 
-백엔드 부분은 어려운 문제를 풀어냈을 때의 느끼는 쾌감 같을 걸 느낄 수 있지만
-그 과정이 나에게는 아직 버겁다 
-  
-그에 비해 프론트엔드는 내가 작성하는 코드가 구현된 모습을 바로바로 볼 수 있는게 재밌게 느껴진다 
-좀 더 고쳐보려고 노력하게 되고 더 욕심내서 코드를 짜려고 하게 된다 
+ flex를 사용하기 위해서는 컨테이너 태그에 display속성을 부여해야 합니다
 
-  " />
+여기서 컨테이너란 배치할 요소자식들을 감싸고 있는 큰 틀부모 같은 존재입니다 
+
+br
+ 속성은 크게 2가지로 나뉩니다
+  container에 부여되는 속성
+  Item에 부여되는 속성
+ container에 부여되는 속성 먼저 알아볼께요 
+br
+br
+br
+  display
+ 위에서 말했든 컨테이너 태그에 displayflex를 사용해줘야 시작할 수 있어요 
+ 그래야 자식들인 flex item들을 배치할 수 있습니다 
+br
+br
+br
+  flexdirection
+ flexdirection은 아이템들이 정렬되는 방향을 결정해요 
+br
+ row 기본값
+ 아이템들이 가로방향으로 배치되요 
+
+1 2 3 
+
+br
+ rowreverse
+ 가로방향이지만 배치되지만 거꾸로 배치되요 
+
+3 2 1
+
+br
+ column
+ 아이템들이 세로방향으로 배치되요 
+
+1
+2
+3
+
+br
+ columnreverse
+ 세로방향이지만 배치되지만 거꾸로 배치되요 
+
+3
+2
+1
+
+br
+br
+br
+  flexwrap
+ flexwrap은 아이템들이 한 줄에 함께 있지 못할 정도로 꽉 차게 된다면 
+ 어떤 식으로 줄바꿈을 할지 결정합니다 
+br
+ nowrap 기본값
+ 넘쳐서 삐져나가도 자리보존 줄바꿈을 하지 않아요  
+br
+ wrap
+ 컨테이너의 크기에 따라 줄바꿈을 합니다 float이나 inlineblock과 비슷해요 
+
+12
+3
+
+br
+ wrapreverse
+ wrap과 비슷하지만 역순으로 줄바꿈 합니다 아래가 위로 위가 아래로 
+
+3
+21
+
+br
+br
+  container 속성은 다음편에서 계속 " />
 <!-- GOOGLE+ -->
 <meta itemprop="headline" content="JEYA-BLOG" />
 <meta itemprop="name" content="JEYA-BLOG" />
-<meta itemprop="description" content=" JEYABLOG 탄생로그
- 메인 홈 디자인 잡기 
-youtube
-ThLyBjKoA
+<meta itemprop="description" content="  CSS displayflex 공부하기   container 속성 1탄
 
+ flex는 엘리먼트의 크기나 위치를 쉽게 잡아주는 도구
 
-프론트와 백을 함께 배우면서 내 적성에는 뭐가 제일
-잘 맞을까 수도 없어 고민하고 있는데 
-이 사이트 만드는 과정을 통해서 확실히 나는 프론트를 더 
-재밌다고 느끼는 거 같다 
-백엔드 부분은 어려운 문제를 풀어냈을 때의 느끼는 쾌감 같을 걸 느낄 수 있지만
-그 과정이 나에게는 아직 버겁다 
-  
-그에 비해 프론트엔드는 내가 작성하는 코드가 구현된 모습을 바로바로 볼 수 있는게 재밌게 느껴진다 
-좀 더 고쳐보려고 노력하게 되고 더 욕심내서 코드를 짜려고 하게 된다 
+ flex를 사용하기 위해서는 컨테이너 태그에 display속성을 부여해야 합니다
 
-  " />
+여기서 컨테이너란 배치할 요소자식들을 감싸고 있는 큰 틀부모 같은 존재입니다 
+
+br
+ 속성은 크게 2가지로 나뉩니다
+  container에 부여되는 속성
+  Item에 부여되는 속성
+ container에 부여되는 속성 먼저 알아볼께요 
+br
+br
+br
+  display
+ 위에서 말했든 컨테이너 태그에 displayflex를 사용해줘야 시작할 수 있어요 
+ 그래야 자식들인 flex item들을 배치할 수 있습니다 
+br
+br
+br
+  flexdirection
+ flexdirection은 아이템들이 정렬되는 방향을 결정해요 
+br
+ row 기본값
+ 아이템들이 가로방향으로 배치되요 
+
+1 2 3 
+
+br
+ rowreverse
+ 가로방향이지만 배치되지만 거꾸로 배치되요 
+
+3 2 1
+
+br
+ column
+ 아이템들이 세로방향으로 배치되요 
+
+1
+2
+3
+
+br
+ columnreverse
+ 세로방향이지만 배치되지만 거꾸로 배치되요 
+
+3
+2
+1
+
+br
+br
+br
+  flexwrap
+ flexwrap은 아이템들이 한 줄에 함께 있지 못할 정도로 꽉 차게 된다면 
+ 어떤 식으로 줄바꿈을 할지 결정합니다 
+br
+ nowrap 기본값
+ 넘쳐서 삐져나가도 자리보존 줄바꿈을 하지 않아요  
+br
+ wrap
+ 컨테이너의 크기에 따라 줄바꿈을 합니다 float이나 inlineblock과 비슷해요 
+
+12
+3
+
+br
+ wrapreverse
+ wrap과 비슷하지만 역순으로 줄바꿈 합니다 아래가 위로 위가 아래로 
+
+3
+21
+
+br
+br
+  container 속성은 다음편에서 계속 " />
 <meta itemprop="image" content="site/img/logo.png" />
 
 <!-- 구글 소유권 확인 메타태그 -->
@@ -132,7 +315,7 @@ ThLyBjKoA
 <!--css -->
 <link rel="stylesheet" href="app.css" />
 
-<title>JEYA-BLOG 탄생로그 -- 3</title>
+<title>CSS flex_container 속성 1탄!</title>
 </head>
 
 <body>
@@ -198,23 +381,84 @@ ThLyBjKoA
 	
 <section class="con-min-width">
 	<div class="con">
-		<div class="section-3_detail flex"><div class="detail_1 flex"><span>JEYA-BLOG 탄생로그 -- 3</span></div><div class="detail_2 flex">작성일 : <div class="regDate">2021-01-07 04:23:06</div>작성자 : <div class="writer">제야</div>조회수 <div class="count">0</div>추천수 <div class="count">0</div>댓글수 <div class="count">0</div></div><div class="detail_3"><div class="detail_body"># JEYA-BLOG 탄생로그💚
-> 메인 홈 디자인 잡기 
-```youtube
-T-hLyBj-KoA
+		<div class="section-3_detail flex"><div class="detail_1 flex"><span>CSS flex_container 속성 1탄!</span></div><div class="detail_2 flex">작성일 : <div class="regDate">2021-01-07 05:14:35</div>작성자 : <div class="writer">제야</div>조회수 <div class="count">0</div>추천수 <div class="count">0</div>댓글수 <div class="count">0</div></div><div class="detail_3"><div class="detail_body"># 🌈 CSS display:flex 공부하기 -  container 속성 1탄
+
+## flex는 엘리먼트의 크기나 위치를 쉽게 잡아주는 도구!
+
+#### flex를 사용하기 위해서는 컨테이너 태그에 display속성을 부여해야 합니다
 ```
-
-프론트와 백을 함께 배우면서 내 적성에는 뭐가 제일
-잘 맞을까 수도 없어 고민하고 있는데 
-이 사이트 만드는 과정을 통해서 확실히 나는 프론트를 더 
-재밌다고 느끼는 거 같다. 
-백엔드 부분은 어려운 문제를 풀어냈을 때의 느끼는 쾌감 같을 걸 느낄 수 있지만
-그 과정이 나에게는 아직 버겁다... 
-  
-그에 비해 프론트엔드는 내가 작성하는 코드가 구현된 모습을 바로바로 볼 수 있는게 재밌게 느껴진다. 
-좀 더 고쳐보려고 노력하게 되고, 더 욕심내서 코드를 짜려고 하게 된다. 
-
-  </div></div><div class="detail_4 flex"><div class="prev"><a href="article-7.html"> &lt; 이전글 </a></div><div class="article_list"><a href="StudyLog-1.html">목록으로돌아가기</a></div><div class="next"><a href="article-9.html">다음글 &gt;</a></div></div></div></div><script src="app.js"></script></section><div id="disqus_thread"></div>
+여기서 컨테이너란, 배치할 요소(자식)들을 감싸고 있는 큰 틀(부모) 같은 존재입니다! 
+```
+<br>
+#### 속성은 크게 2가지로 나뉩니다!
+## ✅ container에 부여되는 속성
+## ✅ Item에 부여되는 속성
+#### [container에 부여되는 속성] 먼저 알아볼께요! 
+<br>
+<br>
+<br>
+## 📐 display
+#### 위에서 말했든 컨테이너 태그에 display:flex를 사용해줘야 시작할 수 있어요! 
+#### 그래야 자식들인 flex item들을 배치할 수 있습니다! 
+<br>
+<br>
+<br>
+## 📐 flex-direction
+#### flex-direction은 아이템들이 정렬되는 방향을 결정해요! 
+<br>
+## `row (기본값)`
+#### 아이템들이 가로방향으로 배치되요! 
+```
+1️⃣ 2️⃣ 3️⃣ 
+```
+<br>
+## `row-reverse`
+#### 가로방향이지만 배치되지만 거꾸로! 배치되요! 
+```
+3️⃣ 2️⃣ 1️⃣
+```
+<br>
+## `column`
+#### 아이템들이 세로방향으로 배치되요! 
+```
+1️⃣
+2️⃣
+3️⃣
+```
+<br>
+## `column-reverse`
+#### 세로방향이지만 배치되지만 거꾸로! 배치되요! 
+```
+3️⃣
+2️⃣
+1️⃣
+```
+<br>
+<br>
+<br>
+## 📐 flex-wrap
+#### flex-wrap은 아이템들이 한 줄에 함께 있지 못할 정도로 꽉!! 차게 된다면 
+#### 어떤 식으로 줄바꿈을 할지 결정합니다! 
+<br>
+## `nowrap (기본값)`
+#### 넘쳐서 삐져나가도 자리보존! 줄바꿈을 하지 않아요!  
+<br>
+## `wrap`
+#### 컨테이너의 크기에 따라 줄바꿈을 합니다! float이나 inline-block과 비슷해요! 
+```
+1️⃣2️⃣
+3️⃣
+```
+<br>
+## `wrap-reverse`
+#### wrap과 비슷하지만 역순으로! 줄바꿈 합니다! 아래가 위로! 위가 아래로! 
+```
+3️⃣
+2️⃣1️⃣
+```
+<br>
+<br>
+## 👉 container 속성은 다음편에서 계속! </div></div><div class="detail_4 flex"><div class="prev"><a href="article-7.html"> &lt; 이전글 </a></div><div class="article_list"><a href="IT-1.html">목록으로돌아가기</a></div></div></div></div><script src="app.js"></script></section><div id="disqus_thread"></div>
 <script>
 	var disqus_config = function(){
 		this.page.url = 'https://blog.ljeya.org/article-8.html';
