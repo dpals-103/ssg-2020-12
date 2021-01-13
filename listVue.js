@@ -39,7 +39,7 @@ const searchBox = new Vue({
 		},
 		filtered: function() {
 			if (this.filterKey.length == 0) {
-				return this.articleList;
+				return null;
 			}
 			return this.articleList.filter((row) => {
 				const keys = ['title', 'writer'];
