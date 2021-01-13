@@ -4,11 +4,12 @@ $.get(
 	'article_list.json',
 	{},
 	function(data) {
-		data.forEach((row) => {
+		data.forEach((row,index) => {
 		
 			console.log(row);
 			
 			const article = {
+				id : row.id,
 				title: row.title,
 				writer: row.extra__writer,
 				count: row.count,
